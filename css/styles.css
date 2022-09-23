@@ -114,6 +114,58 @@ h1, h2, h3, h4{
 }
 
 /********************************************* formulario ********************************/
+.fondo{
+    background-color: #83a6d3;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-top: 2.5rem;
+}
+
+.texto-formulario{
+    color: var(--colorBlanco);
+    font-weight: bolder;
+    margin-left: 15rem;
+}
+.contenedor2{
+    margin: 0 30rem 0 30rem;
+}
+.cuadros-beneficios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.cuadro-beneficios{
+    border: 2px solid black;
+    border-radius: 35px;
+    width: 27rem;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1;
+    margin: 0 10rem 0 10rem;
+}
+.img-beneficios{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 8rem 0 8rem;
+}
+.texto-beneficios{
+    font-family: var(--fuenteHeading);
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+.subtexto{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subtexto-beneficios{
+    line-height: 2.3rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
 .formulario{
     background-color: var(--colorDifuminado);
     width: min(60rem, 100%); /* Utiliza el valor mas pequeño */
