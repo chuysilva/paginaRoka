@@ -135,13 +135,15 @@ h1, h2, h3, h4{
     align-items: center;
 }
 .cuadro-beneficios{
+    background: linear-gradient(to top, var(--colorDifuminado) 0%, var(--colorBlanco) 100%);
     border: 2px solid black;
     border-radius: 35px;
     width: 27rem;
     height: 40rem;
     display: grid;
     grid-template-columns: 1;
-    margin: 0 10rem 0 10rem;
+    justify-self: center;
+    
 }
 .img-beneficios{
     width: 10rem;
