@@ -86,7 +86,7 @@ h1, h2, h3, h4{
     height: 17rem;
     padding: 0;
 }
-.boton-conoce-mas{
+.enlace-conoce-mas{
     width: 25rem;
     height: 7rem;
     margin: 5rem 1rem 5rem 0;
@@ -96,8 +96,10 @@ h1, h2, h3, h4{
     color: var(--colorBlanco);
     border: none;
     font-weight: 700;
+    text-align: center;
+    padding-top: 14px;
 }
-.boton-conoce-mas:hover{
+.enlace-conoce-mas:hover{
     background-color: #ce7d32;
 }
 
@@ -171,7 +173,7 @@ h1, h2, h3, h4{
 .formulario{
     background-color: var(--colorDifuminado);
     width: min(60rem, 100%); /* Utiliza el valor mas pequeño */
-    margin: 0 auto; /* Solo utilizar margin cuando tengamos un formulario y cuyo padre no sea un display flex*/
+    /* Solo utilizar margin cuando tengamos un formulario y cuyo padre no sea un display flex*/
     border-radius: 1rem;
     padding: 2rem;
     margin-top: 2.5rem;
@@ -295,4 +297,47 @@ h1, h2, h3, h4{
 
 .titulo-footer{
     font-weight: bolder;
+}
+
+
+
+/****************************************************** Apartado Ubicacion **************************************/
+.ubicacion{
+    background-color: var(--colorDifuminado);
+    font-family: var(--fuenteParrafos);
+    color: var(--colorBlanco);
+    margin-top: 8rem;
+    height: 90rem;
+}
+.texto-ubicacion{
+    font-size: 3rem;
+    margin-left: 6rem;
+}
+.contenedor-mapa{
+    display: flex;
+    justify-content: center;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    width: 1300px;
+    border: 5px solid darkblue;
+}
+.texto_abajo-ubicacion{
+    font-family: var(--fuenteParrafos);
+    margin-left: 10rem;
+    font-size: 2.5rem;
+}
+
+/********************************************************** Apartado Contacto *******************************************/
+.contenedor-info_form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #83a6d3;
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+}
+.datos{
+    color: var(--colorBlanco);
+    margin: 10rem 2rem 0 2rem;
 }
