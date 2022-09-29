@@ -50,13 +50,17 @@ h1, h2, h3, h4{
 }
 .nav-menu{
     display: flex;
-    gap: 9rem;
+    
     line-height: 5.5rem;
-    padding-right: 11rem;
+    padding-right: 4rem;
     list-style: none;
 }
 .nav-menu-link{
     color: white;
+    padding: 5rem 3rem 4rem 3rem;
+}
+.nav-menu-link:hover{
+    background-color: #7091bb;
 }
 
 .nav-menu-items{
@@ -340,4 +344,26 @@ h1, h2, h3, h4{
 .datos{
     color: var(--colorBlanco);
     margin: 10rem 2rem 0 2rem;
+}
+
+/********************************************************* Apartado Definicion *******************************************/
+.contenedor-definicion{
+    margin-top: 8rem;
+    background-color: #657FA2; /* Cambiar color */
+    height: 55rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+.texto-definicion{
+    margin: 10rem 2rem 0 2rem;
+    text-align: center;
+    color: var(--colorBlanco);
+}
+.imagen-definicion{
+    width: 45rem;
+    margin: 0 auto;
+    padding-top: 5rem;
 }
