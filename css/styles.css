@@ -345,6 +345,9 @@ h1, h2, h3, h4{
     color: var(--colorBlanco);
     margin: 10rem 2rem 0 2rem;
 }
+.textarea{
+    resize: none;
+}
 
 /********************************************************* Apartado Definicion *******************************************/
 .contenedor-definicion{
