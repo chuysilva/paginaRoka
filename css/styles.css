@@ -370,3 +370,68 @@ h1, h2, h3, h4{
     margin: 0 auto;
     padding-top: 5rem;
 }
+
+/**************************************************************** Apartado servicios ********/
+
+.contenedor{
+    background: rgb(217,217,217);
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 50%, rgba(217,217,217,1) 100%);
+    margin: 1.5rem;
+}
+
+.contenedor-servicios{
+    display: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.texto-principal{
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+}
+.texto{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    color: #8D7979;
+    text-shadow:  1px 5px 5px #aba8a8;
+}
+
+.servicios{
+    background-color: #657FA2;
+    border-radius: 100px 100px;
+    border-top-left-radius: 0 ;
+    margin: 2rem;
+    box-shadow: -10px -10px 10px 0px #7e7e7e;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    color: var(--colorBlanco);
+    font-family: var(--fuenteParrafos);
+}
+
+.servicio{
+    font-weight: bolder;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-size: 4.5rem;
+}
+
+.texto-servicios{
+    line-height: 3rem;
+}
+
+.imagen-servicio{
+    width: 100%;
+    border-radius: 100px;
+    height: 40rem;
+}
+
+.cambia-radius{
+    border-top-right-radius: 0;
+    border-top-left-radius: 100px;
+}
+
+.cambia-radius2{
+    border-bottom-right-radius: 0px;
+}
