@@ -462,7 +462,7 @@ h1, h2, h3, h4{
 
 .contenedor-slider{
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     position: relative;
