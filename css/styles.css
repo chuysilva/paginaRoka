@@ -53,10 +53,11 @@ h1, h2, h3, h4{
     line-height: 5.5rem;
     padding-right: 4rem;
     list-style: none;
+    margin: 0;
 }
 .nav-menu-link{
     color: white;
-    padding: 5rem 3rem 4rem 3rem;
+    padding: 1.6rem 3rem 2.8rem 3rem;
 }
 .nav-menu-link:hover{
     background-color: #7091bb;
@@ -74,6 +75,35 @@ h1, h2, h3, h4{
     padding: 3rem 0 1rem;
 }
 
+.nav-submenu-link{
+    color: var(--colorBlanco);
+    padding: 0 20px 0 20px;
+}
+.submenu{    
+    background-color: var(--colorDifuminado);    
+    color: var(--colorBlanco);
+}
+ul, ol{
+    list-style: none;
+}
+.nav li a{
+    display: block;
+    text-decoration: none;    
+}
+.nav li a:hover{
+    background-color: #7091bb;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+.nav li:hover > ul{
+    display: block;
+}
 /************** Conoce mas *******************************/
 .conoce-mas{
     background: #3b4c61;
@@ -376,10 +406,6 @@ h1, h2, h3, h4{
     background: linear-gradient(0deg, #3b4c61 40%, rgba(255,255,255,1) 40%);
     margin-bottom: 40rem;
 }
-.fondo-prueba{
-    background-color: #3b4c61;
-    height: 35rem;
-}
 
 .contenedor-servicios{
     display: column;
@@ -466,7 +492,7 @@ h1, h2, h3, h4{
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: relative;
 }
 .slider{
@@ -510,5 +536,36 @@ h1, h2, h3, h4{
 }
 
 
-/****************************************************/
+/***********************  Alianzas     ************************/
+.alianza-fondo{
+    background-color: #3b4c61;
+    height: 35rem;
+}
 
+.texto-alianzas{   
+    display: flex;
+    padding-top: 30px;
+    text-align: center;
+    font: var(--fuenteHeading);
+    color: var(--colorBlanco);
+    font-size: 35px;
+}
+.texto__alianzas{
+    margin: 0;
+    margin-left: 35%;
+}
+.texto__alianzas2{
+    margin-left: 30px;
+    color: #8db5e9;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.img-alianzas{
+    width: 270px;
+    gap: 2rem;
+}
