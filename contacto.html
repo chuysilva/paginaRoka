@@ -39,25 +39,27 @@
             </div>
 
             <section class="formulario">
-                <form>
+                <form action="https://formsubmit.co/albertosilvarincon@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/paginaRoka/contacto.html">
                     <fieldset>
                         <legend>Contactanos llenando todos los campos</legend>
                             <div class="contenedor-campos">
                                 <div class="campo">
                                     <label>Nombre</label>
-                                    <input class="input-text" type="text" placeholder="Nombre">                    
+                                    <input class="input-text" type="text" placeholder="Nombre" name="Nombre" required>                    
                                 </div>
                                 <div class="campo">
                                     <label>Telefono</label>
-                                    <input class="input-text" type="tel" placeholder="Telefono">                    
+                                    <input class="input-text" type="tel" placeholder="Telefono" name="Telefono" required>                    
                                 </div>
                                 <div class="campo">
                                     <label>E-mail</label>
-                                    <input class="input-text" type="email" placeholder="Email">                    
+                                    <input class="input-text" type="email" placeholder="Email" name="E-mail" required>                    
                                 </div>
                                 <div class="campo">
                                     <label>Mensaje</label>
-                                    <textarea class="input-text textarea"></textarea>                  
+                                    <textarea class="input-text textarea" name="Mensaje" required></textarea>                  
                                 </div>
                             </div>
 
