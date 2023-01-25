@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4{
-    font-family: var(--fuenteHeading);
+    font-family: var(--fuenteParrafos);
 }
 
 /******************************************* Propiedades de la pagina ******************************/
@@ -78,6 +78,7 @@ h1, h2, h3, h4{
 .nav-submenu-link{
     color: var(--colorBlanco);
     padding: 0 20px 0 20px;
+    line-height: 4.5rem;
 }
 .submenu{    
     background-color: #495d77;    
@@ -215,7 +216,7 @@ ul, ol{
 
 .formulario fieldset{
     border: none;
-    border-radius: 35px;
+    border-radius: 35px;    
 }
 
 .formulario legend{
@@ -223,8 +224,11 @@ ul, ol{
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    font-weight: bold;
     color: var(--colorBlanco);
+}
+.legend{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 768px) { 
@@ -249,7 +253,6 @@ ul, ol{
 
 .campo label{
     color: var(--blanco);
-    font-weight: bold;
     margin-bottom: .5rem;
     display: block;
 
@@ -341,29 +344,36 @@ ul, ol{
     color: var(--colorBlanco);
     height: 90rem;
 }
-.texto-ubicacion{
+.texto-ubicacion{    
     font-size: 3rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
 }
 .contenedor-mapa{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    
 }
 .mapa{
-    display: flex;
-    justify-content: center;
-    width: 1300px;
-    border: 5px solid #9b9bc9;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
 }
 .texto_abajo-ubicacion{
     font-family: var(--fuenteParrafos);
     font-size: 2.5rem;
     margin: 0;
-    padding-left: 10rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 .margin{
-    margin: 0;
+    margin: 1rem;
+}
+
+.img-icon{
+    width: 20px;
+}
+
+.correo{
+    outline: none;
+    color: var(--colorBlanco);
 }
 
 /********************************************************** Apartado Contacto *******************************************/
@@ -376,19 +386,18 @@ ul, ol{
 .datos{
     color: var(--colorBlanco);
     margin: 10rem 2rem 0 2rem;
+    text-align: center;
 }
 .textarea{
     resize: none;
 }
 
 /********************************************************* Apartado Definicion *******************************************/
-.contenedor-definicion{
-    margin-top: 8rem;
+.contenedor-definicion{    
     background-color: #657FA2; /* Cambiar color */
     height: 55rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 8rem;
+    grid-template-columns: repeat(2, 1fr);    
     padding-bottom: 2rem;
 }
 
@@ -400,7 +409,7 @@ ul, ol{
 .imagen-definicion{
     width: 45rem;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 /**************************************************************** Apartado servicios ********/
