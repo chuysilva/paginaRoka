@@ -367,6 +367,10 @@ ul, ol{
     margin: 1rem;
 }
 
+.contenedor-icons{
+    padding-top: 1rem;
+}
+
 .img-icon{
     width: 20px;
 }
