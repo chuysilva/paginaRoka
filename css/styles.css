@@ -1,5 +1,5 @@
 :root{
-    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteHeading: 'Open Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --colorDifuminado: #657FA2;
@@ -205,13 +205,14 @@ ul, ol{
 }
 
 .formulario{
-    background-color: var(--colorDifuminado);
+    background-color: #242C37;;
     width: min(60rem, 100%); /* Utiliza el valor mas pequeño */
     /* Solo utilizar margin cuando tengamos un formulario y cuyo padre no sea un display flex*/
     border-radius: 1rem;
     padding: 2rem;
     margin-top: 2.5rem;
     padding-bottom: 0rem;
+    box-shadow: 0px 0px 37px 14px rgba(0,0,0,0.66);
 }
 
 .formulario fieldset{
@@ -284,6 +285,7 @@ ul, ol{
 
 .boton:hover{
     background-color: #ce7d32;
+    cursor: pointer;
 }
 
 .alinear{
@@ -339,29 +341,34 @@ ul, ol{
 
 /****************************************************** Apartado Ubicacion **************************************/
 .ubicacion{
-    background-color: #3b4c61;
+    /*background-color: #3b4c61;*/
     font-family: var(--fuenteParrafos);
-    color: var(--colorBlanco);
-    height: 90rem;
+    /*color: var(--colorBlanco);*/
+    height: 80rem;
 }
 .texto-ubicacion{    
     font-size: 3rem;
-    margin-left: 3rem;
+    padding-left: 3rem;
 }
+
 .contenedor-mapa{
-    display: grid;
-    
+    background: rgb(188,188,218);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, var(--colorDifuminado) 100%);
 }
+
 .mapa{
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
+    margin-left: 8rem;
+    box-shadow: 0px 0px 14px 8px rgba(0,0,0,0.66);
+    width: 88%;
 }
+
 .texto_abajo-ubicacion{
     font-family: var(--fuenteParrafos);
     font-size: 2.5rem;
-    margin: 0;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    margin: 2rem 0 0 0;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: var(--colorDifuminado);
+    color: var(--colorBlanco);
 }
 .margin{
     margin: 1rem;
@@ -377,18 +384,18 @@ ul, ol{
 
 .correo{
     outline: none;
-    color: var(--colorBlanco);
+    color: black;
 }
 
 /********************************************************** Apartado Contacto *******************************************/
 .contenedor-info_form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #3b4c61;
+    /*background-color: #3b4c61;*/
     padding-bottom: 2rem;
 }
 .datos{
-    color: var(--colorBlanco);
+    color: black;
     margin: 10rem 2rem 0 2rem;
     text-align: center;
 }
@@ -637,4 +644,9 @@ ul, ol{
     text-align: center;
     border: none;
     border-radius: 50px;
+}
+
+.boton-min:hover{
+    background-color: #ce7d32;
+    cursor: pointer;
 }
